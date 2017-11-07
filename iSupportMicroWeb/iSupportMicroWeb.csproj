@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net461</TargetFramework>
+    <RuntimeIdentifier>win7-x64</RuntimeIdentifier>
+    <IsServiceFabricServiceProject>True</IsServiceFabricServiceProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\js\main.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.ViewCompilation" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Server.HttpSys" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.0" />
+    <PackageReference Include="Microsoft.ServiceFabric" Version="6.0.219" />
+    <PackageReference Include="Microsoft.ServiceFabric.AspNetCore.HttpSys" Version="2.8.219" />
+    <PackageReference Include="Microsoft.ServiceFabric.AspNetCore.Kestrel" Version="2.8.219" />
+    <PackageReference Include="Microsoft.ServiceFabric.AspNetCore.WebListener" Version="2.8.219" />
+    <PackageReference Include="Microsoft.ServiceFabric.Data" Version="2.8.219" />
+    <PackageReference Include="Microsoft.ServiceFabric.Services" Version="2.8.219" />
+    <PackageReference Include="Microsoft.ServiceFabric.Services.Remoting" Version="2.8.219" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\iSupportMicro.Common\iSupportMicro.Common.csproj" />
+    <ProjectReference Include="..\iSupportMicro.Customer.Domain\iSupportMicro.Customer.Domain.csproj" />
+    <ProjectReference Include="..\iSupportMicro.Customer.Service\iSupportMicro.Customer.Service.csproj" />
+  </ItemGroup>
+
+</Project>

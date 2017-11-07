@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="fabric:/iSupportMicro" xmlns="http://schemas.microsoft.com/2011/01/fabric">
+  <Parameters>
+    <Parameter Name="iSupportMicro.Customer.Service_PartitionCount" Value="6" />
+    <Parameter Name="iSupportMicro.Customer.Service_MinReplicaSetSize" Value="3" />
+    <Parameter Name="iSupportMicro.Customer.Service_TargetReplicaSetSize" Value="3" />
+    <Parameter Name="iSupportMicroWeb_InstanceCount" Value="1" />
+    <Parameter Name="iSupportMicroData_InstanceCount" Value="1" />
+  </Parameters>
+</Application>
