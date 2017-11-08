@@ -1,6 +1,7 @@
 <template>
     <div id="home">
-        <b-button variant="primary" @click="handler">Handler</b-button>
+        <sui-button primary v-on:click="handler">Primary</sui-button>
+        <!--<b-button variant="primary" @click="handler">Handler</b-button>-->
     </div>
 </template>
 
