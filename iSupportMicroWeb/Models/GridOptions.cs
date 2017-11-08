@@ -8,7 +8,7 @@ namespace iSupportMicroWeb.Models
     public class GridOptions
     {
         public int page { get; set; }
-        public String filter { get; set; }
+        public int per_page { get; set; }
         public String sort { get; set; }
     }
 }

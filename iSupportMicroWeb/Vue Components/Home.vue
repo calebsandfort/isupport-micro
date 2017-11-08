@@ -1,6 +1,6 @@
 <template>
     <div id="home">
-        <sui-button primary v-on:click="handler">Primary</sui-button>
+        <sui-button primary v-on:click.native="handler">Primary</sui-button>
         <!--<b-button variant="primary" @click="handler">Handler</b-button>-->
     </div>
 </template>
@@ -13,9 +13,9 @@
         methods: {
             handler: function (event) {
                 axios.post('/api/customer/add', {
-                    FirstName: 'Fred',
-                    LastName: 'Flintstone',
-                    Email: 'Fred.Flintstone@gmail.com'
+                    FirstName: 'Barney',
+                    LastName: 'Rubble',
+                    Email: 'Barney.Rubble@gmail.com'
                 })
                     .then(function (response) {
                         console.log(response);

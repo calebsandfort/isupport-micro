@@ -45,6 +45,6 @@
 
 <style lang="scss">
     .main.container {
-        margin-top: 7em;
+        margin-top: 5em;
     }
 </style>

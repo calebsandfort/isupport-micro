@@ -2,7 +2,7 @@
     <div id="customers">
         <vuetable ref="vuetable"
                   api-url="/api/customer"
-                  :fields="['firstName', 'lastName', 'email']"></vuetable>
+                  :fields="fields"></vuetable>
     </div>
 </template>
 
@@ -13,6 +13,26 @@
         name: 'customers',
         components: {
             Vuetable
+        },
+        data: function () {
+            return {
+                fields: [
+                    {
+                        name: "firstName",
+                        title: "First",
+                        sortField: "FirstName"
+                    },
+                    {
+                        name: "lastName",
+                        title: "Last",
+                        sortField: "LastName"
+                    },
+                    {
+                        name: "email",
+                        sortField: "Email"
+                    }
+                ]
+            };
         }
     }
 </script>
